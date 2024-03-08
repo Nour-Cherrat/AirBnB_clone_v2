@@ -6,6 +6,10 @@ import os
 
 
 def do_pack():
+    """ Generates a .tgz archive from the contents of the 'web_static' folder.
+
+    Returns:
+        The path to the archive on success, None otherwise. """
     try:
         if not os.path.exists("versions"):
             local('mkdir versions')
